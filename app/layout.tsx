@@ -2,20 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 // Resolve base URL: uses VERCEL_URL in preview/production deploys, fallback to custom domain
-const siteUrl =
-  process.env.VERCEL_URL && process.env.VERCEL_ENV !== "production"
-    ? `https://${process.env.VERCEL_URL}`
-    : "https://barbeariasdonenzinho.com.br";
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "https://barbeariadonenzinho.vercel.app";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : "https://barbeariasdonenzinho.com.br"
-  ),
+  metadataBase: new URL(siteUrl),
   title: "Barbearia em Cerquilho | Barbearia do Nenzinho",
   description:
-    "Corte masculino, barba, luzes, descoloração e progressiva em Cerquilho. Atendimento por ordem de chegada na Barbearia do Nenzinho.",
+    "Corte masculino, barba, luzes e progressiva em Cerquilho. Atendimento por ordem de chegada na Barbearia do Nenzinho.",
   keywords: [
     "barbearia em cerquilho",
     "barbeiro em cerquilho",
@@ -49,13 +46,22 @@ export const metadata: Metadata = {
     siteName: "Barbearia do Nenzinho",
     title: "Barbearia em Cerquilho | Barbearia do Nenzinho",
     description:
-      "Corte masculino, barba, luzes, descoloração e progressiva em Cerquilho. Atendimento por ordem de chegada na Barbearia do Nenzinho.",
+      "Corte masculino, barba, luzes e progressiva em Cerquilho. Atendimento por ordem de chegada na Barbearia do Nenzinho.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Barbearia do Nenzinho — Cerquilho SP",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Barbearia em Cerquilho | Barbearia do Nenzinho",
     description:
-      "Corte masculino, barba, luzes, descoloração e progressiva em Cerquilho. Atendimento por ordem de chegada.",
+      "Corte masculino, barba, luzes e progressiva em Cerquilho. Atendimento por ordem de chegada na Barbearia do Nenzinho.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
