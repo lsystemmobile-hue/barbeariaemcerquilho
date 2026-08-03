@@ -64,7 +64,9 @@ export default function Hero() {
           loop
           muted
           playsInline
-          poster="/clientes/corte-masculino-degrade-barbearia-do-nenzinho-cerquilho.png"
+          preload="none"
+          aria-hidden="true"
+          poster="/clientes/corte-masculino-degrade-barbearia-do-nenzinho-cerquilho.webp"
           style={{
             width: "100%",
             height: "100%",
@@ -75,7 +77,7 @@ export default function Hero() {
           }}
         >
           <source src="/video_hero.mp4" type="video/mp4" />
-          <source src="/video_hero.AAE" type="video/mp4" />
+          <track kind="captions" src="" label="Português" default />
         </video>
         <div
           style={{
@@ -159,7 +161,7 @@ export default function Hero() {
             style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
               fontSize: "clamp(15px, 2vw, 17px)",
-              color: "rgba(255,255,255,0.65)",
+              color: "rgba(255,255,255,0.8)",
               lineHeight: 1.75,
               marginBottom: "36px",
               maxWidth: "540px",
@@ -230,7 +232,7 @@ export default function Hero() {
               display: "inline-flex",
               alignItems: "center",
               gap: "8px",
-              color: "rgba(255,255,255,0.5)",
+              color: "rgba(255,255,255,0.75)",
               fontSize: "13px",
               fontFamily: "'Plus Jakarta Sans', sans-serif",
             }}
@@ -254,10 +256,11 @@ export default function Hero() {
           <div className="card-bezel">
             <div className="card-bezel-inner" style={{ overflow: "hidden", borderRadius: "calc(1.5rem - 2px)" }}>
               <Image
-                src="/clientes/corte-masculino-e-barba-vista-lateral-barbearia-do-nenzinho-cerquilho.png"
+                src="/clientes/corte-masculino-e-barba-vista-lateral-barbearia-do-nenzinho-cerquilho.webp"
                 alt="Corte e barba masculinos de alta precisão na Barbearia do Nenzinho em Cerquilho"
                 width={480}
                 height={600}
+                priority
                 style={{ width: "100%", height: "auto", display: "block" }}
               />
             </div>

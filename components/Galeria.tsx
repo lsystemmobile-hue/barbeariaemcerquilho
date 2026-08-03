@@ -4,37 +4,37 @@ import { useEffect, useRef, useState } from "react";
 
 const galeria = [
   {
-    src: "/clientes/corte-masculino-degrade-com-barba-barbearia-do-nenzinho-cerquilho.png",
+    src: "/clientes/corte-masculino-degrade-com-barba-barbearia-do-nenzinho-cerquilho.webp",
     alt: "Corte masculino degradê com barba realizado em cliente na Barbearia do Nenzinho em Cerquilho",
     label: "Degradê + Barba",
     categoria: "Corte & Barba",
   },
   {
-    src: "/clientes/corte-degrade-com-desenho-lateral-barbearia-do-nenzinho-cerquilho.png",
+    src: "/clientes/corte-degrade-com-desenho-lateral-barbearia-do-nenzinho-cerquilho.webp",
     alt: "Corte masculino degradê com desenho lateral na Barbearia do Nenzinho",
     label: "Freestyle & Desenho",
     categoria: "Arte & Desenho",
   },
   {
-    src: "/clientes/corte-infantil-com-luzes-barbearia-do-nenzinho-cerquilho.png",
+    src: "/clientes/corte-infantil-com-luzes-barbearia-do-nenzinho-cerquilho.webp",
     alt: "Corte masculino com luzes em Cerquilho na Barbearia do Nenzinho",
     label: "Luzes & Coloração",
     categoria: "Coloração",
   },
   {
-    src: "/clientes/corte-masculino-degrade-barbearia-do-nenzinho-cerquilho.png",
+    src: "/clientes/corte-masculino-degrade-barbearia-do-nenzinho-cerquilho.webp",
     alt: "Corte masculino degradê social em Cerquilho",
     label: "Degradê Navalhado",
     categoria: "Corte Masculino",
   },
   {
-    src: "/clientes/corte-masculino-e-barba-vista-lateral-barbearia-do-nenzinho-cerquilho.png",
+    src: "/clientes/corte-masculino-e-barba-vista-lateral-barbearia-do-nenzinho-cerquilho.webp",
     alt: "Corte masculino e barba vista lateral na Barbearia do Nenzinho",
     label: "Corte & Barba Premium",
     categoria: "Corte & Barba",
   },
   {
-    src: "/clientes/corte-infantil-degrade-com-desenho-homem-aranha-barbearia-do-nenzinho-cerquilho.png",
+    src: "/clientes/corte-infantil-degrade-com-desenho-homem-aranha-barbearia-do-nenzinho-cerquilho.webp",
     alt: "Corte infantil degradê com desenho do Homem-Aranha em Cerquilho",
     label: "Infantil Temático",
     categoria: "Desenho Infantil",
