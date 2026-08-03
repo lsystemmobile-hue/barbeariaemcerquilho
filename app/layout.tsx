@@ -87,6 +87,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "xx93pPLUry1w-NfCR9YkJw9WJQ9cRzZMouSD4YNDsa4",
+  },
 };
 
 const jsonLdHairSalon = {
@@ -211,6 +214,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${playfair.variable} ${jakarta.variable}`}>
       <head>
         <meta name="theme-color" content="#0A0A0A" />
+        <meta name="google-site-verification" content="xx93pPLUry1w-NfCR9YkJw9WJQ9cRzZMouSD4YNDsa4" />
         <link
           rel="preload"
           as="image"
