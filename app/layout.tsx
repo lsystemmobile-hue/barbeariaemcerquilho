@@ -50,21 +50,12 @@ export const metadata: Metadata = {
     title: "Barbearia em Cerquilho | Barbearia do Nenzinho",
     description:
       "Corte masculino, barba, luzes, descoloração e progressiva em Cerquilho. Atendimento por ordem de chegada na Barbearia do Nenzinho.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Barbearia do Nenzinho — Cerquilho SP",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Barbearia em Cerquilho | Barbearia do Nenzinho",
     description:
       "Corte masculino, barba, luzes, descoloração e progressiva em Cerquilho. Atendimento por ordem de chegada.",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true,
