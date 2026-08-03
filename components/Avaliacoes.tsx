@@ -87,9 +87,9 @@ export default function Avaliacoes() {
               style={{
                 fontFamily: "'Plus Jakarta Sans', sans-serif",
                 fontSize: "14px",
-                color: "rgba(255,255,255,0.45)",
-                lineHeight: 1.75,
-                marginBottom: "28px",
+                color: "rgba(255,255,255,0.75)",
+                marginBottom: "24px",
+                lineHeight: 1.6,
               }}
             >
               Os depoimentos dos nossos clientes serão exibidos aqui em breve.

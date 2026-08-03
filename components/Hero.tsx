@@ -77,7 +77,7 @@ export default function Hero() {
           }}
         >
           <source src="/video_hero.mp4" type="video/mp4" />
-          <track kind="captions" src="" label="Português" default />
+          <track kind="captions" src="data:text/vtt,WEBVTT" label="Português" default />
         </video>
         <div
           style={{
@@ -258,8 +258,8 @@ export default function Hero() {
               <Image
                 src="/clientes/corte-masculino-e-barba-vista-lateral-barbearia-do-nenzinho-cerquilho.webp"
                 alt="Corte e barba masculinos de alta precisão na Barbearia do Nenzinho em Cerquilho"
-                width={480}
-                height={600}
+                width={500}
+                height={500}
                 priority
                 style={{ width: "100%", height: "auto", display: "block" }}
               />

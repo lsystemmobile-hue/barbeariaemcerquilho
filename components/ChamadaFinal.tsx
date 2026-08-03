@@ -115,7 +115,7 @@ export default function ChamadaFinal() {
           style={{
             fontFamily: "'Plus Jakarta Sans', sans-serif",
             fontSize: "13px",
-            color: "rgba(255,255,255,0.35)",
+            color: "rgba(255,255,255,0.7)",
             marginTop: "20px",
           }}
         >

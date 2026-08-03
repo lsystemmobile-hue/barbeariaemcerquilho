@@ -219,7 +219,7 @@ export default function Galeria() {
             marginTop: "24px",
             fontFamily: "'Plus Jakarta Sans', sans-serif",
             fontSize: "13px",
-            color: "rgba(255,255,255,0.5)",
+            color: "rgba(255,255,255,0.75)",
           }}
         >
           Fotos reais dos nossos serviços prestados — acompanhe mais no{" "}

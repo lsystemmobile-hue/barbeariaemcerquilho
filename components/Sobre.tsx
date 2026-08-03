@@ -47,8 +47,8 @@ export default function Sobre() {
             <Image
               src="/clientes/corte-masculino-degrade-com-barba-barbearia-do-nenzinho-cerquilho.webp"
               alt="Corte masculino e barba em cliente atendido na Barbearia do Nenzinho em Cerquilho"
-              width={580}
-              height={440}
+              width={500}
+              height={500}
               style={{ width: "100%", height: "auto", display: "block" }}
               loading="lazy"
             />

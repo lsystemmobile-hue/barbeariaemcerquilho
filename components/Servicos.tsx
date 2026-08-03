@@ -119,7 +119,7 @@ export default function Servicos() {
             style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
               fontSize: "16px",
-              color: "rgba(255,255,255,0.5)",
+              color: "rgba(255,255,255,0.75)",
             }}
           >
             Atendimento por ordem de chegada. Encontre o cuidado ideal para manter seu visual sempre em dia.
@@ -188,7 +188,7 @@ export default function Servicos() {
                         style={{
                           fontFamily: "'Plus Jakarta Sans', sans-serif",
                           fontSize: "14px",
-                          color: "rgba(255,255,255,0.75)",
+                          color: "rgba(255,255,255,0.85)",
                         }}
                       >
                         {s.nome}
@@ -212,7 +212,7 @@ export default function Servicos() {
                     style={{
                       fontFamily: "'Plus Jakarta Sans', sans-serif",
                       fontSize: "12px",
-                      color: "rgba(255,255,255,0.35)",
+                      color: "rgba(255,255,255,0.7)",
                       marginBottom: "20px",
                       lineHeight: 1.6,
                     }}
