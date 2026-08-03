@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = "https://barbeariasdonenzinho.com.br";
+// Resolve base URL: uses VERCEL_URL in preview/production deploys, fallback to custom domain
+const siteUrl =
+  process.env.VERCEL_URL && process.env.VERCEL_ENV !== "production"
+    ? `https://${process.env.VERCEL_URL}`
+    : "https://barbeariasdonenzinho.com.br";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://barbeariasdonenzinho.com.br"
+  ),
   title: "Barbearia em Cerquilho | Barbearia do Nenzinho",
   description:
     "Corte masculino, barba, luzes, descoloração e progressiva em Cerquilho. Atendimento por ordem de chegada na Barbearia do Nenzinho.",
@@ -21,6 +29,16 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Barbearia do Nenzinho" }],
   creator: "Barbearia do Nenzinho",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+  },
+  manifest: "/manifest.json",
   alternates: {
     canonical: siteUrl,
   },
@@ -182,8 +200,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0A0A0A" />
         <script
           type="application/ld+json"
