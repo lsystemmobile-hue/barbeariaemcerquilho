@@ -211,6 +211,14 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${playfair.variable} ${jakarta.variable}`}>
       <head>
         <meta name="theme-color" content="#0A0A0A" />
+        <link
+          rel="preload"
+          as="image"
+          href="/clientes/corte-masculino-degrade-barbearia-do-nenzinho-cerquilho.webp"
+          type="image/webp"
+          // @ts-expect-error fetchpriority is standard HTML
+          fetchpriority="high"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHairSalon) }}
